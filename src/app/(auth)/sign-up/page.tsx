@@ -50,7 +50,10 @@ export default function SignUpPage() {
   };
 
   const handleSocialSignIn = async (provider: "google" | "github") => {
-    await signIn.social({ provider, callbackURL: "/" });
+    const { data, error } = await signIn.social({ provider, callbackURL: "/" });
+    if (error) {
+      toast.error(error.message || `${provider} লগইন ব্যর্থ হয়েছে`);
+    }
   };
 
   return (
