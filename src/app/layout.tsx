@@ -14,6 +14,9 @@ const hindSiliguri = Hind_Siliguri({
 });
 
 export const metadata: Metadata = {
+  icons: {
+    icon: '/logo-icon.png',
+  },
   title: 'Bazardor',
   description: 'Bazardor grocery price ticker',
 };
