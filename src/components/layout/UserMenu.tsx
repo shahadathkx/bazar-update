@@ -51,7 +51,7 @@ export function UserMenu({ user }: { user: { name: string; image?: string | null
       >
         <div className="w-7 h-7 sm:w-9 sm:h-9 shrink-0 rounded-[10.5px] bg-primary text-primary-content flex items-center justify-center overflow-hidden">
           {user.image ? (
-            <img /* eslint-disable-next-line @next/next/no-img-element */ src={user.image} alt={user.name} className="w-full h-full object-cover" />
+            <img src={user.image} alt={user.name} className="w-full h-full object-cover" />
           ) : (
             <span className="font-medium text-sm sm:text-lg">{user.name.charAt(0)}</span>
           )}

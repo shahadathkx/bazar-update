@@ -21,7 +21,7 @@ export default function ProfilePage() {
   }
 
   if (!session) {
-    return null; // Handled by middleware
+    return null;
   }
 
   const { user } = session;

@@ -4,7 +4,7 @@ export async function apiFetch<T>(path: string, options?: RequestInit): Promise<
     throw new Error('API_BASE_URL is not set in the environment variables');
   }
 
-  // Ensure path starts with a slash or handle it properly with URL
+
   const url = `${baseUrl.replace(/\/$/, '')}/${path.replace(/^\//, '')}`;
 
   const res = await fetch(url, {

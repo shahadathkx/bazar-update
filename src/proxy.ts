@@ -4,7 +4,7 @@ import type { NextRequest } from "next/server";
 export default async function proxy(request: NextRequest) {
   const { pathname } = request.nextUrl;
   
-  // Fetch session from better-auth endpoint
+
   let session = null;
   try {
     const response = await fetch(new URL("/api/auth/get-session", request.url), {
@@ -16,7 +16,7 @@ export default async function proxy(request: NextRequest) {
       session = await response.json();
     }
   } catch (err) {
-    // ignore
+
   }
 
   const isAuthRoute = pathname === "/sign-in" || pathname === "/sign-up";

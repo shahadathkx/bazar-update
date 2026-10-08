@@ -11,7 +11,7 @@ export function ProductCard({ product }: { product: Product }) {
       href={`/product/${product.slug}`}
       className="block bg-base-100 border border-base-300 rounded-[16px] p-4 flex flex-col gap-3 transition hover:border-primary hover:shadow-[0_2px_8px_rgba(0,0,0,0.04)] focus-visible:ring-2 focus-visible:ring-primary focus-visible:outline-none"
     >
-      {/* Top row */}
+
       <div className="flex gap-3 items-start">
         <div className="w-12 h-12 shrink-0 bg-base-200 rounded-[12px] flex items-center justify-center text-[24px] leading-[32px]">
           {product.image}
@@ -26,7 +26,7 @@ export function ProductCard({ product }: { product: Product }) {
         </div>
       </div>
       
-      {/* Bottom row */}
+
       <div className="flex items-end justify-between mt-auto">
         <div className="flex flex-col">
           <span className="text-[12px] font-normal leading-[16px] text-base-content/70">

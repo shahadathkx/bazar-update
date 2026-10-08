@@ -18,7 +18,7 @@ export async function generateMetadata({ params }: { params: Params }) {
 }
 
 export default async function ProductPage({ params }: { params: Params }) {
-  // TODO(auth): this route must require login. When Better Auth is set up, redirect unauthenticated users to /sign-in with a callbackUrl back to this page.
+
   const { slug } = await params;
   const product = await getProductBySlug(slug);
   

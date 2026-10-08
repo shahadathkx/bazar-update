@@ -14,7 +14,7 @@ export async function Navbar() {
 
   return (
     <header className="bg-base-100 border-b border-base-300">
-      {/* Row 1 */}
+
       <Container className="py-3 flex items-center justify-between">
         <Link href="/" className="flex items-center gap-2 min-w-0 mr-2">
           <div className="w-10 h-10 shrink-0 rounded-[12px] bg-primary flex items-center justify-center text-[18px] text-primary-content">
@@ -38,7 +38,7 @@ export async function Navbar() {
         </div>
       </Container>
 
-      {/* Row 2 */}
+
       <CategoryNav categories={categories} />
     </header>
   );

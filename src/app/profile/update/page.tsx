@@ -40,7 +40,7 @@ export default function UpdateProfilePage() {
   const onSubmit = async (values: UpdateValues) => {
     setIsPending(true);
     
-    // BetterAuth update user API
+
     const { data, error } = await authClient.updateUser({
       name: values.name,
     });

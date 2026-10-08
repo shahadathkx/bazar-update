@@ -18,7 +18,7 @@ export function CategoryNav({ categories }: { categories: Category[] }) {
   return (
     <div className="border-t border-base-200">
       <div className="mx-auto w-full max-w-6xl overflow-x-auto scrollbar-hide snap-x py-2">
-        <div className="flex gap-1 min-w-max px-4">
+        <div className="flex justify-center-safe gap-1 min-w-max px-4">
           {categories.map((cat) => {
             const href = `/category/${cat.slug}`;
             const isActive = pathname === href || pathname.startsWith(`${href}/`);
